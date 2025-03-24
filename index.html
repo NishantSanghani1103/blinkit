@@ -1,0 +1,1602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <header class="container-fluid">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <svg width="134" height="30" viewBox="0 0 114 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.3342 7.186C16.2619 7.186 17.9832 7.66644 19.4978 8.62732C21.0262 9.57447 22.2242 10.9197 23.0917 12.663C23.9316 14.3377 24.3516 16.3075 24.3516 18.5724C24.3516 20.7687 23.9316 22.7316 23.0917 24.4612C22.2517 26.1908 21.0675 27.5429 19.5391 28.5175C17.9969 29.5058 16.2619 30 14.3342 30C12.9297 30 11.6078 29.7117 10.3685 29.1352C9.12927 28.5587 8.06901 27.7488 7.18775 26.7056V29.4852H0V0H7.18775V10.4598C8.06901 9.41661 9.12927 8.61359 10.3685 8.05079C11.6078 7.47426 12.9297 7.186 14.3342 7.186ZM12.1861 24.0494C13.2051 24.0494 14.1139 23.8161 14.9125 23.3493C15.7112 22.8826 16.3377 22.2306 16.7921 21.3933C17.2465 20.5697 17.4737 19.6294 17.4737 18.5724C17.4737 17.5429 17.2465 16.6095 16.7921 15.7721C16.3377 14.9348 15.7112 14.2828 14.9125 13.8161C14.1139 13.3493 13.2051 13.116 12.1861 13.116C11.2223 13.116 10.3617 13.3493 9.60432 13.8161C8.84699 14.269 8.2549 14.9073 7.82804 15.731C7.40118 16.5683 7.18775 17.5154 7.18775 18.5724C7.18775 19.6294 7.40118 20.5765 7.82804 21.4139C8.2549 22.2375 8.84699 22.8826 9.60432 23.3493C10.3617 23.8161 11.2223 24.0494 12.1861 24.0494Z"
+                            fill="#F8CB46"></path>
+                        <path d="M25.3356 29.4852V0H32.5233V29.4852H25.3356Z" fill="#F8CB46"></path>
+                        <path d="M34.5607 29.4852V7.68016H41.7071V29.4852H34.5607Z" fill="#F8CB46"></path>
+                        <path
+                            d="M57.2319 7.186C58.7603 7.186 60.1372 7.5429 61.3627 8.25669C62.5882 8.95676 63.5521 9.94509 64.2544 11.2217C64.9291 12.512 65.2664 13.9739 65.2664 15.6074V29.4852H58.4092V17.2135C58.4092 16.4173 58.2508 15.7104 57.9341 15.0927C57.6312 14.4612 57.1974 13.9739 56.6329 13.6307C56.0821 13.2876 55.4349 13.116 54.6914 13.116C53.9891 13.116 53.3419 13.2876 52.7498 13.6307C52.1577 13.9602 51.6965 14.4132 51.366 14.9897C51.0218 15.5388 50.8496 16.1839 50.8496 16.9252L50.8083 29.4852H43.6619V7.68016H50.8083V10.1716C51.483 9.23816 52.3849 8.51064 53.5141 7.98902C54.6432 7.45367 55.8824 7.186 57.2319 7.186Z"
+                            fill="#F8CB46"></path>
+                        <path
+                            d="M81.0597 17.2135L89.1769 29.4852H81.0597L76.3091 21.7639L74.1198 24.2965V29.4852H66.932V0H74.1198V16.2869L81.0184 7.68016H89.1356L81.0597 17.2135Z"
+                            fill="#F8CB46"></path>
+                        <path d="M34.5569 0.00232667H41.7267V5.59207H34.5569V0.00232667Z" fill="#F8CB46"></path>
+                        <path d="M90.3176 29.4198V7.61479H97.464V29.4198H90.3176Z" fill="#54B226"></path>
+                        <path
+                            d="M112.575 23.2634L114 27.855C113.353 28.4727 112.534 28.9737 111.542 29.3581C110.564 29.7424 109.607 29.9346 108.671 29.9346C107.322 29.9346 106.117 29.6395 105.057 29.0492C103.996 28.4452 103.17 27.6079 102.578 26.5372C101.986 25.494 101.69 24.2929 101.69 22.9339V13.3183H98.819V7.61479H101.69V0.00241089H108.547V7.61479H113.071V13.3183H108.547V21.6161C108.547 22.3162 108.733 22.8859 109.105 23.3251C109.477 23.7644 109.952 23.984 110.53 23.984C110.943 23.984 111.329 23.9223 111.687 23.7987C112.045 23.6752 112.341 23.4967 112.575 23.2634Z"
+                            fill="#54B226"></path>
+                        <path d="M90.2609 0.00241089H97.4307V5.59215H90.2609V0.00241089Z" fill="#54B226"></path>
+                    </svg>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 py-2">
+                        <li class="nav-item">
+                            <a class="nav-link active fw-bolder" aria-current="page" href="#" style="font-size: 18px;">Delivery in 22 minutes</a>
+                            <p class="ms-2">Rajkot ,&nbsp;Gujarat ,&nbsp;India&nbsp;<i class="fa-solid fa-caret-down"></i></p>
+                        </li>
+                        <li class="nav-item">
+                            <input type="text">
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+    </header> -->
+    <section class="container-fluid pt-2">
+        <div class="container" id="banner">
+            <img src="images/Group-33704.jpg" class="img-fluid" alt="">
+        </div>
+        <div class="container" id="bannerItems">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="bannetItemsContent">
+                        <figure>
+                            <img src="images/pharmacy-WEB.jpg" class="img-fluid" alt="">
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="bannetItemsContent">
+                        <figure>
+                            <img src="images/Pet-Care_WEB.jpg" class="img-fluid" alt="">
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="bannetItemsContent">
+                        <figure>
+                            <img src="images/babycare-WEB.jpg" class="img-fluid" alt="">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid" id="items">
+        <div class="container">
+            <div class="row row-cols-lg-10">
+                <div class="col">
+                    <div>
+                        <figure>
+                            <img src="images/paan-corner_web.jpg" class="img-fluid" alt="">
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div>
+                        <figure>
+                            <img src="images/Slice-2_10.png" class="img-fluid" alt="">
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div>
+                        <figure>
+                            <img src="images/Slice-3_9.png" class="img-fluid" alt="">
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div>
+                        <figure>
+                            <img src="images/Slice-4_9.png" class="img-fluid" alt="">
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div>
+                        <figure>
+                            <img src="images/Slice-5_4.png" class="img-fluid" alt="">
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div>
+                        <figure>
+                            <img src="images/Slice-6_5.png" class="img-fluid" alt="">
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div>
+                        <figure>
+                            <img src="images/Slice-7_3.png" class="img-fluid" alt="">
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div>
+                        <figure>
+                            <img src="images/Slice-8_4.png" class="img-fluid" alt="">
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div>
+                        <figure>
+                            <img src="images/Slice-9_3.png" class="img-fluid" alt="">
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div>
+                        <figure>
+                            <img src="images/Slice-10.png" class="img-fluid" alt="">
+                        </figure>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row row-cols-lg-10 ">
+                <div class="col">
+                    <div>
+                        <figure>
+                            <img src="images/Slice-11.png" class="img-fluid" alt="">
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div>
+                        <figure>
+                            <img src="images/Slice-12.png" class="img-fluid" alt="">
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div>
+                        <figure>
+                            <img src="images/Slice-13.png" class="img-fluid" alt="">
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div>
+                        <figure>
+                            <img src="images/Slice-14.png" class="img-fluid" alt="">
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div>
+                        <figure>
+                            <img src="images/Slice-15.png" class="img-fluid" alt="">
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div>
+                        <figure>
+                            <img src="images/Slice-16.png" class="img-fluid" alt="">
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div>
+                        <figure>
+                            <img src="images/Slice-17.png" class="img-fluid" alt="">
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div>
+                        <figure>
+                            <img src="images/Slice-18.png" class="img-fluid" alt="">
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div>
+                        <figure>
+                            <img src="images/Slice-19.png" class="img-fluid" alt="">
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div>
+                        <figure>
+                            <img src="images/Slice-20.png" class="img-fluid" alt="">
+                        </figure>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid py-2" id="dairy">
+        <div class="container">
+            <div class=" row align-content-center align-items-center justify-content-between heading">
+                <div class="col-lg-6">
+                    <h3 class="fw-bold">Dairy, Bread & Eggs</h3>
+                </div>
+                <div class="col-lg-6">
+                    <p class="text-end" style="line-height: 32px;
+                    font-size: 20px;
+                    color: rgb(12, 131, 31);">see all </p>
+                </div>
+            </div>
+            <div class="dairyItems">
+                <div class="owl-carousel owl-theme" id="dairyCarousal">
+                    <div class="item">
+                        <div class="card-group">
+                            <div class="card">
+                                <img src="images/1c0db977-31ab-4d8e-abf3-d42e4a4b4632.jpg" class="card-img-top"
+                                    alt="..." width="140px" height="140px">
+                                <div class="card-body">
+                                    <p>18 mins</p>
+                                    <p class="card-text text-black fw-semibold">Amul Gold Full Cream Fresh Milk.</p>
+                                    <p style="font-size: 12px;">500ml</p>
+                                    <div class="row justify-content-between align-items-center ">
+                                        <div class="col-lg-6">
+                                            <p class="fw-semibold mb-0">₹33</p>
+                                        </div>
+                                        <div class="col-lg-6 text-end">
+                                            <button type="button" class="btn btn-outline-success">ADD</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card-group">
+                            <div class="card">
+                                <img src="images/5ee4441d-9109-48fa-9343-f5ce82b905a6.jpg" class="card-img-top"
+                                    alt="..." width="140px" height="140px">
+                                <div class="card-body">
+                                    <p>18 mins</p>
+                                    <p class="card-text text-black fw-semibold">Amul Gold Full Cream Fresh Milk.</p>
+                                    <p style="font-size: 12px;">500ml</p>
+                                    <div class="row justify-content-between align-items-center ">
+                                        <div class="col-lg-6">
+                                            <p class="fw-semibold mb-0">₹33</p>
+                                        </div>
+                                        <div class="col-lg-6 text-end">
+                                            <button type="button" class="btn btn-outline-success">ADD</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card-group">
+                            <div class="card">
+                                <img src="images/c2b22cd4-b144-4266-901a-ff4ae82aa912.jpg" class="card-img-top"
+                                    alt="..." width="140px" height="140px">
+                                <div class="card-body">
+                                    <p>18 mins</p>
+                                    <p class="card-text text-black fw-semibold">Amul Gold Full Cream Fresh Milk.</p>
+                                    <p style="font-size: 12px;">500ml</p>
+                                    <div class="row justify-content-between align-items-center ">
+                                        <div class="col-lg-6">
+                                            <p class="fw-semibold mb-0">₹33</p>
+                                        </div>
+                                        <div class="col-lg-6 text-end">
+                                            <button type="button" class="btn btn-outline-success">ADD</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card-group">
+                            <div class="card">
+                                <img src="images/73bcc2db-0799-4014-ab75-029bfcdb8375.jpg" class="card-img-top"
+                                    alt="..." width="140px" height="140px">
+                                <div class="card-body">
+                                    <p>18 mins</p>
+                                    <p class="card-text text-black fw-semibold">Amul Gold Full Cream Fresh Milk.</p>
+                                    <p style="font-size: 12px;">500ml</p>
+                                    <div class="row justify-content-between align-items-center ">
+                                        <div class="col-lg-6">
+                                            <p class="fw-semibold mb-0">₹33</p>
+                                        </div>
+                                        <div class="col-lg-6 text-end">
+                                            <button type="button" class="btn btn-outline-success">ADD</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card-group">
+                            <div class="card">
+                                <img src="images/6ae62ec2-3b13-4fff-b052-2ff3d4ef2d16.jpg" class="card-img-top"
+                                    alt="..." width="140px" height="140px">
+                                <div class="card-body">
+                                    <p>18 mins</p>
+                                    <p class="card-text text-black fw-semibold">Amul Gold Full Cream Fresh Milk.</p>
+                                    <p style="font-size: 12px;">500ml</p>
+                                    <div class="row justify-content-between align-items-center ">
+                                        <div class="col-lg-6">
+                                            <p class="fw-semibold mb-0">₹33</p>
+                                        </div>
+                                        <div class="col-lg-6 text-end">
+                                            <button type="button" class="btn btn-outline-success">ADD</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card-group">
+                            <div class="card">
+                                <img src="images/0be0d49a-4dae-408a-8786-afae1dd05cb1.jpg" class="card-img-top"
+                                    alt="..." width="140px" height="140px">
+                                <div class="card-body">
+                                    <p>18 mins</p>
+                                    <p class="card-text text-black fw-semibold">Amul Gold Full Cream Fresh Milk.</p>
+                                    <p style="font-size: 12px;">500ml</p>
+                                    <div class="row justify-content-between align-items-center ">
+                                        <div class="col-lg-6">
+                                            <p class="fw-semibold mb-0">₹33</p>
+                                        </div>
+                                        <div class="col-lg-6 text-end">
+                                            <button type="button" class="btn btn-outline-success">ADD</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card-group">
+                            <div class="card">
+                                <img src="images/57f39bfe-1aaf-471b-a752-8e81aa446e28.jpg" class="card-img-top"
+                                    alt="..." width="140px" height="140px">
+                                <div class="card-body">
+                                    <p>18 mins</p>
+                                    <p class="card-text text-black fw-semibold">Amul Unsalted Buttermilk</p>
+                                    <p style="font-size: 12px;">460ml</p>
+                                    <div class="row justify-content-between align-items-center ">
+                                        <div class="col-lg-6">
+                                            <p class="fw-semibold mb-0">₹15</p>
+                                        </div>
+                                        <div class="col-lg-6 text-end">
+                                            <button type="button" class="btn btn-outline-success">ADD</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card-group">
+                            <div class="card">
+                                <img src="images/170a.jpg" class="card-img-top" alt="..." width="140px" height="140px">
+                                <div class="card-body">
+                                    <p>18 mins</p>
+                                    <p class="card-text text-black fw-semibold">Amul Cheese Cubes</p>
+                                    <p style="font-size: 12px;">200 g</p>
+                                    <div class="row justify-content-between pt-1">
+                                        <div class="col-lg-6">
+                                            <p class="fw-semibold mb-0">₹134</p>
+                                            <p class="text-decoration-line-through text-secondary"
+                                                style="font-size: 12px;">₹135</p>
+                                        </div>
+                                        <div class="col-lg-6 text-end">
+                                            <button type="button" class="btn btn-outline-success">ADD</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card-group">
+                            <div class="card">
+                                <img src="images/17668a.jpg" class="card-img-top" alt="..." width="140px"
+                                    height="140px">
+                                <div class="card-body">
+                                    <p>18 mins</p>
+                                    <p class="card-text text-black fw-semibold">Amul Cheese Block</p>
+                                    <p style="font-size: 12px;">500 g</p>
+                                    <div class="row justify-content-between align-items-center pt-3 ">
+                                        <div class="col-lg-6">
+                                            <p class="fw-semibold mb-0">₹300</p>
+                                        </div>
+                                        <div class="col-lg-6 text-end">
+                                            <button type="button" class="btn btn-outline-success">ADD</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card-group">
+                            <div class="card">
+                                <img src="images/503609a.jpg" class="card-img-top" alt="..." width="140px"
+                                    height="140px">
+                                <div class="card-body">
+                                    <p>18 mins</p>
+                                    <p class="card-text text-black fw-semibold">Super Crustless White Bread</p>
+                                    <p style="font-size: 12px;">300 g</p>
+                                    <div class="row justify-content-between align-items-center ">
+                                        <div class="col-lg-6">
+                                            <p class="fw-semibold mb-0">₹50</p>
+                                        </div>
+                                        <div class="col-lg-6 text-end">
+                                            <button type="button" class="btn btn-outline-success">ADD</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card-group">
+                            <div class="card">
+                                <img src="images/68759469-86ec-4f2c-95ca-0922dcab6288.jpg" class="card-img-top"
+                                    alt="..." width="140px" height="140px">
+                                <div class="card-body">
+                                    <p>18 mins</p>
+                                    <p class="card-text text-black fw-semibold">Kabhi B White Bread</p>
+                                    <p style="font-size: 12px;">300 g</p>
+                                    <div class="row justify-content-between align-items-center pt-2">
+                                        <div class="col-lg-6">
+                                            <p class="fw-semibold mb-0">₹32</p>
+                                        </div>
+                                        <div class="col-lg-6 text-end">
+                                            <button type="button" class="btn btn-outline-success">ADD</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card-group">
+                            <div class="card">
+                                <img src="images/ecf2f055-233c-450f-a0ef-5da6070b60c3.jpg" class="card-img-top"
+                                    alt="..." width="140px" height="140px">
+                                <div class="card-body">
+                                    <p>18 mins</p>
+                                    <p class="card-text text-black fw-semibold">Amul Taaza Toned Milk</p>
+                                    <p style="font-size: 12px;">200 ml</p>
+                                    <div class="row justify-content-between align-items-center ">
+                                        <div class="col-lg-6">
+                                            <p class="fw-semibold mb-0">₹16</p>
+                                        </div>
+                                        <div class="col-lg-6 text-end">
+                                            <button type="button" class="btn btn-outline-success">ADD</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card-group">
+                            <div class="card">
+                                <img src="images/7451feb4-7824-4a87-8ae4-af81eb36e490.jpg" class="card-img-top"
+                                    alt="..." width="140px" height="140px">
+                                <div class="card-body">
+                                    <p>18 mins</p>
+                                    <p class="card-text text-black fw-semibold">Amul Blend Diced Cheese</p>
+                                    <p style="font-size: 12px;">200 g</p>
+                                    <div class="row justify-content-between align-items-center ">
+                                        <div class="col-lg-6">
+                                            <p class="fw-semibold mb-0">₹125</p>
+                                        </div>
+                                        <div class="col-lg-6 text-end">
+                                            <button type="button" class="btn btn-outline-success">ADD</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid py-2" id="tobaco">
+        <div class="container">
+            <div class=" row align-content-center align-items-center justify-content-between heading">
+                <div class="col-lg-6">
+                    <h3 class="fw-bold">Rolling paper & tobacco</h3>
+                </div>
+                <div class="col-lg-6">
+                    <p class="text-end" style="line-height: 32px;
+                    font-size: 20px;
+                    color: rgb(12, 131, 31);">see all </p>
+                </div>
+            </div>
+            <div class="dairyItems">
+                <div class="owl-carousel owl-theme" id="tobacoCarosual">
+                    <div class="item">
+                        <div class="Items p-3">
+                            <img src="images/496996a.jpg" alt="" style="height: 140px; width: 140px;">
+                            <p style="font-size: 10px;">18 mins</p>
+                            <p class="fw-bold" style="font-size: 13px;">Brown Rolling Paper Cones - Stash Pro</p>
+                            <span class="text-secondary" style="font-size: 12px;">6 pieces</span>
+                            <div class="carousalItemsButton">
+                                <p class="fw-semibold mb-0" style="font-size: 13px;">₹90</p>
+                                <button type="button" class="btn btn-outline-success">ADD</button>
+                            </div>
+                            <!-- <div class="row justify-content-between align-items-center ">
+                                <div class="col-lg-6">
+                                    <p class="fw-semibold" style="font-size: 12px;" >₹80</p>
+                                </div>
+                                <div class="col-lg-6 text-end">
+                                    <button type="button" class="btn btn-outline-success">ADD</button>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="Items p-3">
+                            <img src="images/496997a.jpg" alt="" style="height: 140px; width: 140px;">
+                            <p style="font-size: 10px;">18 mins</p>
+                            <p class="fw-bold" style="font-size: 13px;">White Rolling Paper Cones - Stash Pro</p>
+                            <span class="text-secondary" style="font-size: 12px;">6 pieces</span>
+                            <div class="carousalItemsButton">
+                                <p class="fw-semibold mb-0" style="font-size: 13px;">₹90</p>
+                                <button type="button" class="btn btn-outline-success">ADD</button>
+                            </div>
+                            <!-- <div class="row justify-content-between align-items-center ">
+                                <div class="col-lg-6">
+                                    <p class="fw-semibold" style="font-size: 12px;" >₹80</p>
+                                </div>
+                                <div class="col-lg-6 text-end">
+                                    <button type="button" class="btn btn-outline-success">ADD</button>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="Items p-3">
+                            <img src="images/ad69d94f-1ba9-41d3-b140-7cf1ad39a86c.jpg" alt=""
+                                style="height: 140px; width: 140px;">
+                            <p style="font-size: 10px;">18 mins</p>
+                            <p class="fw-bold" style="font-size: 13px;">Rolled Cones by SLIMJIM</p>
+                            <span class="text-secondary" style="font-size: 12px;">1 pack (6 pieces)</span>
+                            <div class="carousalItemsButton">
+                                <p class="fw-semibold mb-0" style="font-size: 13px;">₹90</p>
+                                <button type="button" class="btn btn-outline-success">ADD</button>
+                            </div>
+                            <!-- <div class="row justify-content-between align-items-center ">
+                                <div class="col-lg-6">
+                                    <p class="fw-semibold" style="font-size: 12px;" >₹80</p>
+                                </div>
+                                <div class="col-lg-6 text-end">
+                                    <button type="button" class="btn btn-outline-success">ADD</button>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="Items p-3">
+                            <img src="images/506375a.jpg" alt="" style="height: 140px; width: 140px;">
+                            <p style="font-size: 10px;">18 mins</p>
+                            <p class="fw-bold" style="font-size: 13px;">Brown Rolling Paper Cones - Stash Pro</p>
+                            <span class="text-secondary" style="font-size: 12px;">1 pack (64 pieces)</span>
+                            <div class="carousalItemsButton">
+                                <p class="fw-semibold mb-0" style="font-size: 13px;">₹120</p>
+                                <button type="button" class="btn btn-outline-success">ADD</button>
+                            </div>
+                            <!-- <div class="row justify-content-between align-items-center ">
+                                <div class="col-lg-6">
+                                    <p class="fw-semibold" style="font-size: 12px;" >₹80</p>
+                                </div>
+                                <div class="col-lg-6 text-end">
+                                    <button type="button" class="btn btn-outline-success">ADD</button>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="Items p-3">
+                            <img src="images/496994a.jpg" alt="" style="height: 140px; width: 140px;">
+                            <p style="font-size: 10px;">18 mins</p>
+                            <p class="fw-bold" style="font-size: 13px;">Brown Rolling Paper + Roach with Crushing...</p>
+                            <span class="text-secondary" style="font-size: 12px;">1 pack</span>
+                            <div class="carousalItemsButton">
+                                <p class="fw-semibold mb-0" style="font-size: 13px;">₹222</p>
+                                <button type="button" class="btn btn-outline-success">ADD</button>
+                            </div>
+                            <!-- <div class="row justify-content-between align-items-center ">
+                                <div class="col-lg-6">
+                                    <p class="fw-semibold" style="font-size: 12px;" >₹80</p>
+                                </div>
+                                <div class="col-lg-6 text-end">
+                                    <button type="button" class="btn btn-outline-success">ADD</button>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="Items p-3">
+                            <img src="images/2607a98a-0b2d-43dc-b5a5-2322540fa309.jpg" alt="" style="height: 140px; width: 140px;">
+                            <p style="font-size: 10px;">18 mins</p>
+                            <p class="fw-bold" style="font-size: 13px;">Brown Rolling Paper (King Size) - Stash Pro</p>
+                            <span class="text-secondary" style="font-size: 12px;">1 unit (32 pieces)</span>
+                            <div class="carousalItemsButton">
+                                <p class="fw-semibold mb-0" style="font-size: 13px;">₹50</p>
+                                <button type="button" class="btn btn-outline-success">ADD</button>
+                            </div>
+                            <!-- <div class="row justify-content-between align-items-center ">
+                                <div class="col-lg-6">
+                                    <p class="fw-semibold" style="font-size: 12px;" >₹80</p>
+                                </div>
+                                <div class="col-lg-6 text-end">
+                                    <button type="button" class="btn btn-outline-success">ADD</button>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="Items p-3">
+                            <img src="images/a5b68680-dc18-41b8-b583-c279bfee17a4.jpg" alt="" style="height: 140px; width: 140px;">
+                            <p style="font-size: 10px;">18 mins</p>
+                            <p class="fw-bold" style="font-size: 13px;">Pyramid Rice Handcrafted Pre Rolle...</p>
+                            <span class="text-secondary" style="font-size: 12px;">1 pack (6 pieces)</span>
+                            <div class="carousalItemsButton">
+                                <p class="fw-semibold mb-0" style="font-size: 13px;">₹88</p>
+                                <button type="button" class="btn btn-outline-success">ADD</button>
+                            </div>
+                            <!-- <div class="row justify-content-between align-items-center ">
+                                <div class="col-lg-6">
+                                    <p class="fw-semibold" style="font-size: 12px;" >₹80</p>
+                                </div>
+                                <div class="col-lg-6 text-end">
+                                    <button type="button" class="btn btn-outline-success">ADD</button>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="Items p-3">
+                            <img src="images/881bad95-e4d9-42a0-88f7-64e116711d11.jpg" alt="" style="height: 140px; width: 140px;">
+                            <p style="font-size: 10px;">18 mins</p>
+                            <p class="fw-bold" style="font-size: 13px;">Chandan Calcutta Mitha Pan Mouth Freshener</p>
+                            <span class="text-secondary" style="font-size: 12px;">90 g</span>
+                            <div class="carousalItemsButton">
+                                <p class="fw-semibold mb-0" style="font-size: 13px;">₹90</p>
+                                <button type="button" class="btn btn-outline-success">ADD</button>
+                            </div>
+                            <!-- <div class="row justify-content-between align-items-center ">
+                                <div class="col-lg-6">
+                                    <p class="fw-semibold" style="font-size: 12px;" >₹80</p>
+                                </div>
+                                <div class="col-lg-6 text-end">
+                                    <button type="button" class="btn btn-outline-success">ADD</button>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item">
+                            <div class="Items p-3">
+                                <img src="images/0423584a-e1f4-481b-84bc-6c5b7b998587.jpg" alt="" style="height: 140px; width: 140px;">
+                                <p style="font-size: 10px;">18 mins</p>
+                                <p class="fw-bold" style="font-size: 13px;">420 Double Booklet Rolling Paper & Tips b...</p>
+                                <span class="text-secondary" style="font-size: 12px;">1 pack (66 pieces)</span>
+                                <div class="carousalItemsButton">
+                                    <p class="fw-semibold mb-0" style="font-size: 13px;">₹222</p>
+                                    <button type="button" class="btn btn-outline-success">ADD</button>
+                                </div>
+                                <!-- <div class="row justify-content-between align-items-center ">
+                                    <div class="col-lg-6">
+                                        <p class="fw-semibold" style="font-size: 12px;" >₹80</p>
+                                    </div>
+                                    <div class="col-lg-6 text-end">
+                                        <button type="button" class="btn btn-outline-success">ADD</button>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="Items p-3">
+                            <img src="images/506715a.jpg" alt="" style="height: 140px; width: 140px;">
+                            <p style="font-size: 10px;">18 mins</p>
+                            <p class="fw-bold" style="font-size: 13px;">Thrice A Day Rolling Paper (White) -...</p>
+                            <span class="text-secondary" style="font-size: 12px;">3 pack (6 pieces)</span>
+                            <div class="carousalItemsButton">
+                                <p class="fw-semibold mb-0" style="font-size: 13px;">₹60</p>
+                                <button type="button" class="btn btn-outline-success">ADD</button>
+                            </div>
+                            <!-- <div class="row justify-content-between align-items-center ">
+                                <div class="col-lg-6">
+                                    <p class="fw-semibold" style="font-size: 12px;" >₹80</p>
+                                </div>
+                                <div class="col-lg-6 text-end">
+                                    <button type="button" class="btn btn-outline-success">ADD</button>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="Items p-3">
+                            <img src="images/d0f6ea54-6cee-4c05-83e0-6dbc5e072180.jpg" alt="" style="height: 140px; width: 140px;">
+                            <p style="font-size: 10px;">18 mins</p>
+                            <p class="fw-bold" style="font-size: 13px;">Elite Pink Rolling Paper & Tips by LIT</p>
+                            <span class="text-secondary" style="font-size: 12px;">1 pack (33 pieces)</span>
+                            <div class="carousalItemsButton">
+                                <p class="fw-semibold mb-0" style="font-size: 13px;">₹120</p>
+                                <button type="button" class="btn btn-outline-success">ADD</button>
+                            </div>
+                            <!-- <div class="row justify-content-between align-items-center ">
+                                <div class="col-lg-6">
+                                    <p class="fw-semibold" style="font-size: 12px;" >₹80</p>
+                                </div>
+                                <div class="col-lg-6 text-end">
+                                    <button type="button" class="btn btn-outline-success">ADD</button>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="Items p-3">
+                            <img src="images/496996a.jpg" alt="" style="height: 140px; width: 140px;">
+                            <p style="font-size: 10px;">18 mins</p>
+                            <p class="fw-bold" style="font-size: 13px;">Pyramid Pink Rolling Paper by LIT</p>
+                            <span class="text-secondary" style="font-size: 12px;">1 unit</span>
+                            <div class="carousalItemsButton">
+                                <p class="fw-semibold mb-0" style="font-size: 13px;">₹20</p>
+                                <button type="button" class="btn btn-outline-success">ADD</button>
+                            </div>
+                            <!-- <div class="row justify-content-between align-items-center ">
+                                <div class="col-lg-6">
+                                    <p class="fw-semibold" style="font-size: 12px;" >₹80</p>
+                                </div>
+                                <div class="col-lg-6 text-end">
+                                    <button type="button" class="btn btn-outline-success">ADD</button>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="Items p-3">
+                            <img src="images/512860a.jpg" alt="" style="height: 140px; width: 140px;">
+                            <p style="font-size: 10px;">18 mins</p>
+                            <p class="fw-bold" style="font-size: 13px;">Ultimate Rolling Paper with Filter Tips &...</p>
+                            <span class="text-secondary" style="font-size: 12px;">1 pack (32 Leaves + 32...</span>
+                            <div class="carousalItemsButton">
+                                <p class="fw-semibold mb-0" style="font-size: 13px;">₹80</p>
+                                <button type="button" class="btn btn-outline-success">ADD</button>
+                            </div>
+                            <!-- <div class="row justify-content-between align-items-center ">
+                                <div class="col-lg-6">
+                                    <p class="fw-semibold" style="font-size: 12px;" >₹80</p>
+                                </div>
+                                <div class="col-lg-6 text-end">
+                                    <button type="button" class="btn btn-outline-success">ADD</button>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="Items p-3">
+                            <img src="images/3249bdd8-8455-4caf-a502-14eefe4b28d7.jpg" alt="" style="height: 140px; width: 140px;">
+                            <p style="font-size: 10px;">18 mins</p>
+                            <p class="fw-bold" style="font-size: 13px;">Pyramid Hemp Pre Rolled Cones LIT</p>
+                            <span class="text-secondary" style="font-size: 12px;">1 unit</span>
+                            <div class="carousalItemsButton">
+                                <p class="fw-semibold mb-0" style="font-size: 13px;">₹20</p>
+                                <button type="button" class="btn btn-outline-success">ADD</button>
+                            </div>
+                            <!-- <div class="row justify-content-between align-items-center ">
+                                <div class="col-lg-6">
+                                    <p class="fw-semibold" style="font-size: 12px;" >₹80</p>
+                                </div>
+                                <div class="col-lg-6 text-end">
+                                    <button type="button" class="btn btn-outline-success">ADD</button>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid" id="snacks">
+        <div class="container">
+            <div class=" row align-content-center align-items-center justify-content-between heading">
+                <div class="col-lg-6">
+                    <h3 class="fw-bold">Snacks & Munchies</h3>
+                </div>
+                <div class="col-lg-6">
+                    <p class=" text-end" style="line-height: 32px;
+                    font-size: 20px;
+                    color: rgb(12, 131, 31);">see all </p>
+                </div>
+            </div>
+            <div class="dairyItems">
+                <div class="owl-carousel owl-theme" id="snacksCarosual">
+                    <div class="item">
+                        <div class="Items p-3">
+                            <img src="images/de6faf0d-7cd2-4c79-b850-1ab4968df46c.jpg" alt=""
+                                style="height: 140px; width: 140px;">
+                            <p style="font-size: 10px;">18 mins</p>
+                            <p class="fw-bold" style="font-size: 13px;">Cheetos Cheez Puffs</p>
+                            <span class="text-secondary" style="font-size: 12px;">28 g</span>
+                            <div class="carousalItemsButton" style="padding-top: 35px;">
+                                <p class="fw-semibold mb-0" style="font-size: 13px;">₹10</p>
+                                <button type="button" class="btn btn-outline-success">ADD</button>
+                            </div>
+                            <!-- <div class="row justify-content-between align-items-center ">
+                                <div class="col-lg-6">
+                                    <p class="fw-semibold" style="font-size: 12px;" >₹80</p>
+                                </div>
+                                <div class="col-lg-6 text-end">
+                                    <button type="button" class="btn btn-outline-success">ADD</button>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item">
+                            <div class="Items p-3">
+                                <img src="images/bebe562d-c417-465b-9b12-4d612f48d08a.jpg" alt=""
+                                    style="height: 140px; width: 140px;">
+                                <p style="font-size: 10px;">18 mins</p>
+                                <p class="fw-bold" style="font-size: 13px;">Nongshim Shrimp Flavoured Hot & Spicy...</p>
+                                <span class="text-secondary" style="font-size: 12px;">75 g</span>
+                                <div class="carousalItemsButton pt-3">
+                                    <p class="fw-semibold mb-0" style="font-size: 13px;">₹129</p>
+                                    <button type="button" class="btn btn-outline-success">ADD</button>
+                                </div>
+                                <!-- <div class="row justify-content-between align-items-center ">
+                                    <div class="col-lg-6">
+                                        <p class="fw-semibold" style="font-size: 12px;" >₹80</p>
+                                    </div>
+                                    <div class="col-lg-6 text-end">
+                                        <button type="button" class="btn btn-outline-success">ADD</button>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item">
+                            <div class="Items p-3">
+                                <img src="images/e38b7384-7a24-4e08-b313-c637c517f3f9.jpg" alt=""
+                                    style="height: 140px; width: 140px;">
+                                <p style="font-size: 10px;">18 mins</p>
+                                <p class="fw-bold" style="font-size: 13px;">Cheetos Flamin Hot Popcorn</p>
+                                <span class="text-secondary" style="font-size: 12px;">1 pack (30 pieces)</span>
+                                <div class="carousalItemsButton pt-3">
+                                    <p class="fw-semibold mb-0" style="font-size: 13px;">₹170</p>
+                                    <button type="button" class="btn btn-outline-success">ADD</button>
+                                </div>
+                                <!-- <div class="row justify-content-between align-items-center ">
+                                    <div class="col-lg-6">
+                                        <p class="fw-semibold" style="font-size: 12px;" >₹80</p>
+                                    </div>
+                                    <div class="col-lg-6 text-end">
+                                        <button type="button" class="btn btn-outline-success">ADD</button>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item">
+                            <div class="Items p-3">
+                                <img src="images/6807f54d-f711-49ca-9635-514ac9b72d7f.jpg" alt=""
+                                    style="height: 140px; width: 140px;">
+                                <p class="fw-bold" style="font-size: 10px;">18 mins</p>
+                                <p class="fw-bold" style="font-size: 13px;">Kettle Studio Sharp Jalapenos & Cream...</p>
+                                <span class="text-secondary" style="font-size: 12px;">1 pack</span>
+                                <div class="carousalItemsButton pt-3">
+                                    <p class="fw-semibold mb-0" style="font-size: 13px;">₹47 <br /><span
+                                            class="text-secondary text-decoration-line-through fw-normal">₹49</span></p>
+                                    <button type="button" class="btn btn-outline-success">ADD</button>
+                                </div>
+                                <!-- <div class="row justify-content-between align-items-center ">
+                                    <div class="col-lg-6">
+                                        <p class="fw-semibold" style="font-size: 12px;" >₹80</p>
+                                    </div>
+                                    <div class="col-lg-6 text-end">
+                                        <button type="button" class="btn btn-outline-success">ADD</button>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item">
+                            <div class="Items p-3">
+                                <img src="images/bb141b2d-4fd6-4e64-af0c-185464e52abb.jpg" alt=""
+                                    style="height: 140px; width: 140px;">
+                                <p style="font-size: 10px;">18 mins</p>
+                                <p class="fw-bold" style="font-size: 13px;">Beanly Dark Chocolate Spread with
+                                    Breadsticks</p>
+                                <span class="text-secondary" style="font-size: 12px;">52 g</span>
+                                <div class="carousalItemsButton pt-3">
+                                    <p class="fw-semibold mb-0" style="font-size: 13px;">₹120 <br /><span
+                                            class="text-secondary text-decoration-line-through fw-normal">₹150</span>
+                                    </p>
+                                    <button type="button" class="btn btn-outline-success">ADD</button>
+                                </div>
+                                <!-- <div class="row justify-content-between align-items-center ">
+                                    <div class="col-lg-6">
+                                        <p class="fw-semibold" style="font-size: 12px;" >₹80</p>
+                                    </div>
+                                    <div class="col-lg-6 text-end">
+                                        <button type="button" class="btn btn-outline-success">ADD</button>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item">
+                            <div class="Items p-3">
+                                <img src="images/520069a.jpg" alt="" style="height: 140px; width: 140px;">
+                                <p style="font-size: 10px;">18 mins</p>
+                                <p class="fw-bold" style="font-size: 13px;">Orion Turtle Spicy Devil Corn Chips</p>
+                                <span class="text-secondary" style="font-size: 13px;">115 g</span>
+                                <div class="carousalItemsButton pt-3">
+                                    <p class="fw-semibold mb-0" style="font-size: 13px;">₹97 <br /><span
+                                            class="text-secondary text-decoration-line-through fw-normal">₹100</span>
+                                    </p>
+                                    <button type="button" class="btn btn-outline-success">ADD</button>
+                                </div>
+                                <!-- <div class="row justify-content-between align-items-center ">
+                                    <div class="col-lg-6">
+                                        <p class="fw-semibold" style="font-size: 12px;" >₹80</p>
+                                    </div>
+                                    <div class="col-lg-6 text-end">
+                                        <button type="button" class="btn btn-outline-success">ADD</button>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item">
+                            <div class="Items p-3">
+                                <img src="images/ef3c74a4-c809-4799-919d-27f75fba37eb.jpg" alt=""
+                                    style="height: 140px; width: 140px;">
+                                <p style="font-size: 10px;">18 mins</p>
+                                <p class="fw-bold" style="font-size: 13px;">Cheetos Cheese Flavoured Puffs</p>
+                                <span class="text-secondary" style="font-size: 12px;">24.8 g</span>
+                                <div class="carousalItemsButton pt-3">
+                                    <p class="fw-semibold mb-0" style="font-size: 13px;">₹161 <br /><span
+                                            class="text-secondary text-decoration-line-through fw-normal">₹170</span>
+                                    </p>
+                                    <button type="button" class="btn btn-outline-success">ADD</button>
+                                </div>
+                                <!-- <div class="row justify-content-between align-items-center ">
+                                    <div class="col-lg-6">
+                                        <p class="fw-semibold" style="font-size: 12px;" >₹80</p>
+                                    </div>
+                                    <div class="col-lg-6 text-end">
+                                        <button type="button" class="btn btn-outline-success">ADD</button>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item">
+                            <div class="Items p-3">
+                                <img src="images/7dd25b43-94da-42ad-b719-35ad9e395705.jpg" alt=""
+                                    style="height: 140px; width: 140px;">
+                                <p style="font-size: 10px;">18 mins</p>
+                                <p class="fw-bold" style="font-size: 13px;">Kettle Studio Potato Chips - Himalyan
+                                    Pink...</p>
+                                <span class="text-secondary" style="font-size: 12px;">113 g</span>
+                                <div class="carousalItemsButton pt-3">
+                                    <p class="fw-semibold mb-0" style="font-size: 13px;">₹99</p>
+                                    <button type="button" class="btn btn-outline-success">ADD</button>
+                                </div>
+                                <!-- <div class="row justify-content-between align-items-center ">
+                                    <div class="col-lg-6">
+                                        <p class="fw-semibold" style="font-size: 12px;" >₹80</p>
+                                    </div>
+                                    <div class="col-lg-6 text-end">
+                                        <button type="button" class="btn btn-outline-success">ADD</button>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item">
+                            <div class="Items p-3">
+                                <img src="images/3281415d-c53c-456c-8618-649f8e931c42.jpg" alt=""
+                                    style="height: 140px; width: 140px;">
+                                <p style="font-size: 10px;">18 mins</p>
+                                <p class="fw-bold" style="font-size: 13px;">Kettle Studio Lime & Chilli Wafers</p>
+                                <span class="text-secondary" style="font-size: 12px;">150 g</span>
+                                <div class="carousalItemsButton pt-3">
+                                    <p class="fw-semibold mb-0" style="font-size: 13px;">₹80</p>
+                                    <button type="button" class="btn btn-outline-success">ADD</button>
+                                </div>
+                                <!-- <div class="row justify-content-between align-items-center ">
+                                    <div class="col-lg-6">
+                                        <p class="fw-semibold" style="font-size: 12px;" >₹80</p>
+                                    </div>
+                                    <div class="col-lg-6 text-end">
+                                        <button type="button" class="btn btn-outline-success">ADD</button>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item">
+                            <div class="Items p-3">
+                                <img src="images/033d8394-849a-4a07-a712-79a50df9bd51.jpg" alt=""
+                                    style="height: 140px; width: 140px;">
+                                <p style="font-size: 10px;">18 mins</p>
+                                <p class="fw-bold" style="font-size: 13px;">Kettle Studio Himalayan Pink Salt Potato
+                                    Chips</p>
+                                <span class="text-secondary" style="font-size: 12px;">47 g</span>
+                                <div class="carousalItemsButton pt-3">
+                                    <p class="fw-semibold mb-0" style="font-size: 13px;">₹47 <br /><span
+                                            class="text-secondary text-decoration-line-through fw-normal">₹49</span></p>
+                                    <button type="button" class="btn btn-outline-success">ADD</button>
+                                </div>
+                                <!-- <div class="row justify-content-between align-items-center ">
+                                    <div class="col-lg-6">
+                                        <p class="fw-semibold" style="font-size: 12px;" >₹80</p>
+                                    </div>
+                                    <div class="col-lg-6 text-end">
+                                        <button type="button" class="btn btn-outline-success">ADD</button>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="item">
+                        <div class="item">
+                            <div class="Items p-3">
+                                <img src="images/5fe78691-f9b7-497c-a111-b4fb2514aa02.jpg" alt=""
+                                    style="height: 140px; width: 140px;">
+                                <p style="font-size: 10px;">18 mins</p>
+                                <p class="fw-bold" style="font-size: 13px;">Nongshim Onion Ring Puffs</p>
+                                <span class="text-secondary" style="font-size: 12px;">50 g</span>
+                                <div class="carousalItemsButton pt-3">
+                                    <p class="fw-semibold mb-0" style="font-size: 13px;">₹129</p>
+                                    <button type="button" class="btn btn-outline-success">ADD</button>
+                                </div>
+                                <!-- <div class="row justify-content-between align-items-center ">
+                                    <div class="col-lg-6">
+                                        <p class="fw-semibold" style="font-size: 12px;" >₹80</p>
+                                    </div>
+                                    <div class="col-lg-6 text-end">
+                                        <button type="button" class="btn btn-outline-success">ADD</button>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item">
+                            <div class="Items p-3">
+                                <img src="images/ff2acf02-4008-4fc5-b411-d7927cf92fd7.jpg" alt=""
+                                    style="height: 140px; width: 140px;">
+                                <p style="font-size: 10px;">18 mins</p>
+                                <p class="fw-bold" style="font-size: 13px;">Kettle Studio Mature Cheddar & Red Onions...
+                                </p>
+                                <span class="text-secondary" style="font-size: 12px;">56 g</span>
+                                <div class="carousalItemsButton pt-3">
+                                    <p class="fw-semibold mb-0" style="font-size: 13px;">₹47 <br /><span
+                                            class="text-secondary text-decoration-line-through fw-normal">₹49</span></p>
+                                    <button type="button" class="btn btn-outline-success">ADD</button>
+                                </div>
+                                <!-- <div class="row justify-content-between align-items-center ">
+                                    <div class="col-lg-6">
+                                        <p class="fw-semibold" style="font-size: 12px;" >₹80</p>
+                                    </div>
+                                    <div class="col-lg-6 text-end">
+                                        <button type="button" class="btn btn-outline-success">ADD</button>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item">
+                            <div class="Items p-3">
+                                <img src="images/38298427-fceb-444a-8a42-b922718f9ccb.jpg" alt=""
+                                    style="height: 140px; width: 140px;">
+                                <p style="font-size: 10px;">18 mins</p>
+                                <p class="fw-bold" style="font-size: 13px;">Orion K Snack Kimchi Onion Rings + K
+                                    Snack...</p>
+                                <span class="text-secondary" style="font-size: 12px;">70 g + 70 g</span>
+                                <div class="carousalItemsButton pt-3">
+                                    <p class="fw-semibold mb-0" style="font-size: 13px;">₹90 <br /><span
+                                            class="text-secondary text-decoration-line-through fw-normal">₹120</span>
+                                    </p>
+                                    <button type="button" class="btn btn-outline-success">ADD</button>
+                                </div>
+                                <!-- <div class="row justify-content-between align-items-center ">
+                                    <div class="col-lg-6">
+                                        <p class="fw-semibold" style="font-size: 12px;" >₹80</p>
+                                    </div>
+                                    <div class="col-lg-6 text-end">
+                                        <button type="button" class="btn btn-outline-success">ADD</button>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item">
+                            <div class="Items p-3">
+                                <img src="images/fe49d6ac-194c-4caf-b46d-48c1a3e6a17b.jpg" alt=""
+                                    style="height: 140px; width: 140px;">
+                                <p style="font-size: 10px;">18 mins</p>
+                                <p class="fw-bold" style="font-size: 13px;">Kab's Jackpot Chilli Lemon Stix Crisps</p>
+                                <span class="text-secondary" style="font-size: 12px;">80 g</span>
+                                <div class="carousalItemsButton pt-3">
+                                    <p class="fw-semibold mb-0" style="font-size: 13px;">₹65</p>
+                                    <button type="button" class="btn btn-outline-success">ADD</button>
+                                </div>
+                                <!-- <div class="row justify-content-between align-items-center ">
+                                    <div class="col-lg-6">
+                                        <p class="fw-semibold" style="font-size: 12px;" >₹80</p>
+                                    </div>
+                                    <div class="col-lg-6 text-end">
+                                        <button type="button" class="btn btn-outline-success">ADD</button>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid" id="hookah">
+        <div class="container">
+            <div class=" row align-content-center align-items-center justify-content-between heading">
+                <div class="col-lg-6">
+                    <h3 class="fw-bold">Hookah</h3>
+                </div>
+                <div class="col-lg-6">
+                    <p class=" text-end" style="line-height: 32px;
+                    font-size: 20px;
+                    color: rgb(12, 131, 31);">see all </p>
+                </div>
+            </div>
+            <div class="owl-carousel owl-theme" id="hookahCarousal">
+                <div class="item">
+                    <div class="Items p-3">
+                        <img src="images/496995a.jpg" alt="" style="height: 140px; width: 140px;">
+                        <p style="font-size: 10px;">18 mins</p>
+                        <p class="fw-bold" style="font-size: 13px;">Premium Magic Coal By Stash Pro</p>
+                        <span class="text-secondary" style="font-size: 12px;">1 pack (10 pieces)</span>
+                        <div class="carousalItemsButton pt-3">
+                            <p class="fw-semibold mb-0" style="font-size: 13px;">₹80</p>
+                            <button type="button" class="btn btn-outline-success">ADD</button>
+                        </div>
+                        <!-- <div class="row justify-content-between align-items-center ">
+                            <div class="col-lg-6">
+                                <p class="fw-semibold" style="font-size: 12px;" >₹80</p>
+                            </div>
+                            <div class="col-lg-6 text-end">
+                                <button type="button" class="btn btn-outline-success">ADD</button>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item">
+                        <div class="Items p-3">
+                            <img src="images/e4bfe80f-bc8f-4be3-a5bb-627bb15f72d6.jpg" alt=""
+                                style="height: 140px; width: 140px;">
+                            <p style="font-size: 10px;">18 mins</p>
+                            <p class="fw-bold" style="font-size: 13px;">Calm - Blueberry Non-Tobacco Herbal...</p>
+                            <span class="text-secondary" style="font-size: 12px;">10 g</span>
+                            <div class="carousalItemsButton pt-3">
+                                <p class="fw-semibold mb-0" style="font-size: 13px;">₹100</p>
+                                <button type="button" class="btn btn-outline-success">ADD</button>
+                            </div>
+                            <!-- <div class="row justify-content-between align-items-center ">
+                                <div class="col-lg-6">
+                                    <p class="fw-semibold" style="font-size: 12px;" >₹80</p>
+                                </div>
+                                <div class="col-lg-6 text-end">
+                                    <button type="button" class="btn btn-outline-success">ADD</button>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item">
+                        <div class="Items p-3">
+                            <img src="images/540986a.jpg" alt="" style="height: 140px; width: 140px;">
+                            <p style="font-size: 10px;">18 mins</p>
+                            <p class="fw-bold" style="font-size: 13px;">Premium Silver Hookah Foil by Rhythm Imports</p>
+                            <span class="text-secondary" style="font-size: 12px;">1 pack (30 pieces)</span>
+                            <div class="carousalItemsButton pt-3">
+                                <p class="fw-semibold mb-0" style="font-size: 13px;">₹100</p>
+                                <button type="button" class="btn btn-outline-success">ADD</button>
+                            </div>
+                            <!-- <div class="row justify-content-between align-items-center ">
+                                <div class="col-lg-6">
+                                    <p class="fw-semibold" style="font-size: 12px;" >₹80</p>
+                                </div>
+                                <div class="col-lg-6 text-end">
+                                    <button type="button" class="btn btn-outline-success">ADD</button>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item">
+                        <div class="Items p-3">
+                            <img src="images/630c0b29-2c2b-4ed4-894e-3257d3f8e25c.jpg" alt=""
+                                style="height: 140px; width: 140px;">
+                            <p class="fw-bold" style="font-size: 10px;">18 mins</p>
+                            <p class="fw-bold" style="font-size: 13px;">Square Shape Pre-Cut Hookah Foil with Pin -</p>
+                            <span class="text-secondary" style="font-size: 12px;">1 pack</span>
+                            <div class="carousalItemsButton pt-3">
+                                <p class="fw-semibold mb-0" style="font-size: 13px;">₹150</p>
+                                <button type="button" class="btn btn-outline-success">ADD</button>
+                            </div>
+                            <!-- <div class="row justify-content-between align-items-center ">
+                                <div class="col-lg-6">
+                                    <p class="fw-semibold" style="font-size: 12px;" >₹80</p>
+                                </div>
+                                <div class="col-lg-6 text-end">
+                                    <button type="button" class="btn btn-outline-success">ADD</button>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item">
+                        <div class="Items p-3">
+                            <img src="images/535601a.jpg" alt="" style="height: 140px; width: 140px;">
+                            <p style="font-size: 10px;">18 mins</p>
+                            <p class="fw-bold" style="font-size: 13px;">Coconut Hookah Coal Cubes by Stash Pro</p>
+                            <span class="text-secondary" style="font-size: 13px;">18 pieces</span>
+                            <div class="carousalItemsButton pt-3">
+                                <p class="fw-semibold mb-0" style="font-size: 13px;">₹100</p>
+                                <button type="button" class="btn btn-outline-success">ADD</button>
+                            </div>
+                            <!-- <div class="row justify-content-between align-items-center ">
+                                <div class="col-lg-6">
+                                    <p class="fw-semibold" style="font-size: 12px;" >₹80</p>
+                                </div>
+                                <div class="col-lg-6 text-end">
+                                    <button type="button" class="btn btn-outline-success">ADD</button>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item">
+                        <div class="Items p-3">
+                            <img src="images/c489ccad-8251-433d-bba7-53fb75b64cd9.jpg" alt=""
+                                style="height: 140px; width: 140px;">
+                            <p style="font-size: 10px;">18 mins</p>
+                            <p class="fw-bold" style="font-size: 13px;">Premium Magic Coal By Stash Pro</p>
+                            <span class="text-secondary" style="font-size: 12px;">1 pack (10 pieces)</span>
+                            <div class="carousalItemsButton pt-3">
+                                <p class="fw-semibold mb-0" style="font-size: 13px;">₹100</p>
+                                <button type="button" class="btn btn-outline-success">ADD</button>
+                            </div>
+                            <!-- <div class="row justify-content-between align-items-center ">
+                                <div class="col-lg-6">
+                                    <p class="fw-semibold" style="font-size: 12px;" >₹80</p>
+                                </div>
+                                <div class="col-lg-6 text-end">
+                                    <button type="button" class="btn btn-outline-success">ADD</button>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item">
+                        <div class="Items p-3">
+                            <img src="images/535602a.jpg" alt="" style="height: 140px; width: 140px;">
+                            <p style="font-size: 10px;">18 mins</p>
+                            <p class="fw-bold" style="font-size: 13px;">Flat Coconut Hookah Coal Cubes by Stash Pro</p>
+                            <span class="text-secondary" style="font-size: 12px;">30 pieces</span>
+                            <div class="carousalItemsButton pt-3">
+                                <p class="fw-semibold mb-0" style="font-size: 13px;">₹140</p>
+                                <button type="button" class="btn btn-outline-success">ADD</button>
+                            </div>
+                            <!-- <div class="row justify-content-between align-items-center ">
+                                <div class="col-lg-6">
+                                    <p class="fw-semibold" style="font-size: 12px;" >₹80</p>
+                                </div>
+                                <div class="col-lg-6 text-end">
+                                    <button type="button" class="btn btn-outline-success">ADD</button>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item">
+                        <div class="Items p-3">
+                            <img src="images/480930a.jpg" alt="" style="height: 140px; width: 140px;">
+                            <p style="font-size: 10px;">18 mins</p>
+                            <p class="fw-bold" style="font-size: 13px;">Bombay Paan Masala Herbal Hookah Flavor..</p>
+                            <span class="text-secondary" style="font-size: 12px;">50 g</span>
+                            <div class="carousalItemsButton pt-3">
+                                <p class="fw-semibold mb-0" style="font-size: 13px;">₹100</p>
+                                <button type="button" class="btn btn-outline-success">ADD</button>
+                            </div>
+                            <!-- <div class="row justify-content-between align-items-center ">
+                                <div class="col-lg-6">
+                                    <p class="fw-semibold" style="font-size: 12px;" >₹80</p>
+                                </div>
+                                <div class="col-lg-6 text-end">
+                                    <button type="button" class="btn btn-outline-success">ADD</button>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item">
+                        <div class="Items p-3">
+                            <img src="images/0ede67e6-b7b6-4efa-befe-ee14229decd4.jpg" alt=""
+                                style="height: 140px; width: 140px;">
+                            <p style="font-size: 10px;">18 mins</p>
+                            <p class="fw-bold" style="font-size: 13px;">Electric Charcoal Starter Hookah by Sheesha's...
+                            </p>
+                            <span class="text-secondary" style="font-size: 12px;">1 unit</span>
+                            <div class="carousalItemsButton pt-3">
+                                <p class="fw-semibold mb-0" style="font-size: 13px;">₹600</p>
+                                <button type="button" class="btn btn-outline-success">ADD</button>
+                            </div>
+                            <!-- <div class="row justify-content-between align-items-center ">
+                                <div class="col-lg-6">
+                                    <p class="fw-semibold" style="font-size: 12px;" >₹80</p>
+                                </div>
+                                <div class="col-lg-6 text-end">
+                                    <button type="button" class="btn btn-outline-success">ADD</button>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item">
+                        <div class="Items p-3">
+                            <img src="images/3d94e222-6c7a-45c7-b1d3-99e3329cb5f5.jpg" alt=""
+                                style="height: 140px; width: 140px;">
+                            <p style="font-size: 10px;">18 mins</p>
+                            <p class="fw-bold" style="font-size: 13px;">Organic Mud Hookah Chillum by Smokey Lust</p>
+                            <span class="text-secondary" style="font-size: 12px;">1 unit</span>
+                            <div class="carousalItemsButton pt-3">
+                                <p class="fw-semibold mb-0" style="font-size: 13px;">₹75</p>
+                                <button type="button" class="btn btn-outline-success">ADD</button>
+                            </div>
+                            <!-- <div class="row justify-content-between align-items-center ">
+                                <div class="col-lg-6">
+                                    <p class="fw-semibold" style="font-size: 12px;" >₹80</p>
+                                </div>
+                                <div class="col-lg-6 text-end">
+                                    <button type="button" class="btn btn-outline-success">ADD</button>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <div class="item">
+                        <div class="Items p-3">
+                            <img src="images/8680873c-be67-41af-92cf-ca2beff3c52d.jpg" alt=""
+                                style="height: 140px; width: 140px;">
+                            <p style="font-size: 10px;">18 mins</p>
+                            <p class="fw-bold" style="font-size: 13px;">Metal Coal Hookah Cloud by Smokey Lust</p>
+                            <span class="text-secondary" style="font-size: 12px;">1 unit</span>
+                            <div class="carousalItemsButton pt-3">
+                                <p class="fw-semibold mb-0" style="font-size: 13px;">₹350</p>
+                                <button type="button" class="btn btn-outline-success">ADD</button>
+                            </div>
+                            <!-- <div class="row justify-content-between align-items-center ">
+                                <div class="col-lg-6">
+                                    <p class="fw-semibold" style="font-size: 12px;" >₹80</p>
+                                </div>
+                                <div class="col-lg-6 text-end">
+                                    <button type="button" class="btn btn-outline-success">ADD</button>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item">
+                        <div class="Items p-3">
+                            <img src="images/61eb3cc7-6bd1-4ba9-b03c-44e4c8a0f8a3.jpg" alt=""
+                                style="height: 140px; width: 140px;">
+                            <p style="font-size: 10px;">18 mins</p>
+                            <p class="fw-bold" style="font-size: 13px;">Instant Ignite Magic Coal by Bongchie</p>
+                            <span class="text-secondary" style="font-size: 12px;">1 pack (10 pieces)</span>
+                            <div class="carousalItemsButton pt-3">
+                                <p class="fw-semibold mb-0" style="font-size: 13px;">₹100</p>
+                                <button type="button" class="btn btn-outline-success">ADD</button>
+                            </div>
+                            <!-- <div class="row justify-content-between align-items-center ">
+                                <div class="col-lg-6">
+                                    <p class="fw-semibold" style="font-size: 12px;" >₹80</p>
+                                </div>
+                                <div class="col-lg-6 text-end">
+                                    <button type="button" class="btn btn-outline-success">ADD</button>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item">
+                        <div class="Items p-3">
+                            <img src="images/540990a.jpg" alt="" style="height: 140px; width: 140px;">
+                            <p style="font-size: 10px;">18 mins</p>
+                            <p class="fw-bold" style="font-size: 13px;">Hookah Premium Plastic Filters by Rhythm...</p>
+                            <span class="text-secondary" style="font-size: 12px;">1 pack (20 pieces)</span>
+                            <div class="carousalItemsButton pt-3">
+                                <p class="fw-semibold mb-0" style="font-size: 13px;">₹150</p>
+                                <button type="button" class="btn btn-outline-success">ADD</button>
+                            </div>
+                            <!-- <div class="row justify-content-between align-items-center ">
+                                <div class="col-lg-6">
+                                    <p class="fw-semibold" style="font-size: 12px;" >₹80</p>
+                                </div>
+                                <div class="col-lg-6 text-end">
+                                    <button type="button" class="btn btn-outline-success">ADD</button>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item">
+                        <div class="Items p-3">
+                            <img src="images/5b34c0a2-49e8-4737-b732-706e8aaf2b49.jpg" alt=""
+                                style="height: 140px; width: 140px;">
+                            <p style="font-size: 10px;">18 mins</p>
+                            <p class="fw-bold" style="font-size: 13px;">Mouth Filter Tips for Hookah Pipe by Afzal</p>
+                            <span class="text-secondary" style="font-size: 12px;">5 pieces</span>
+                            <div class="carousalItemsButton pt-3">
+                                <p class="fw-semibold mb-0" style="font-size: 13px;">₹50</p>
+                                <button type="button" class="btn btn-outline-success">ADD</button>
+                            </div>
+                            <!-- <div class="row justify-content-between align-items-center ">
+                                <div class="col-lg-6">
+                                    <p class="fw-semibold" style="font-size: 12px;" >₹80</p>
+                                </div>
+                                <div class="col-lg-6 text-end">
+                                    <button type="button" class="btn btn-outline-success">ADD</button>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item">
+                        <div class="Items p-3">
+                            <img src="images/f68f444f-5428-46e0-95ae-b56ed0ed37dc.jpg" alt=""
+                                style="height: 140px; width: 140px;">
+                            <p style="font-size: 10px;">18 mins</p>
+                            <p class="fw-bold" style="font-size: 13px;">Polo Magic Coal by Irfaz</p>
+                            <span class="text-secondary" style="font-size: 12px;">1 pack (10 tablets)</span>
+                            <div class="carousalItemsButton">
+                                <p class="fw-semibold mb-0" style="font-size: 13px;">₹80</p>
+                                <button type="button" class="btn btn-outline-success">ADD</button>
+                            </div>
+                            <!-- <div class="row justify-content-between align-items-center ">
+                                <div class="col-lg-6">
+                                    <p class="fw-semibold" style="font-size: 12px;" >₹80</p>
+                                </div>
+                                <div class="col-lg-6 text-end">
+                                    <button type="button" class="btn btn-outline-success">ADD</button>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/app.js"></script>
+
+</html>

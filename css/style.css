@@ -1,0 +1,199 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+#dairyCarousal .owl-item img {
+    width: 140px;
+    height: 140px;
+    margin: auto;
+}
+
+#dairyCarousal .owl-next {
+    position: absolute;
+    border-radius: 50%;
+    font-size: 20px !important;
+    height: 35px;
+    width: 35px;
+    top: 38%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: -4%;
+    border-radius: 50%;
+    background: #ccc;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+#dairyCarousal .owl-prev {
+    position: absolute;
+    font-size: 20px !important;
+    height: 35px;
+    width: 35px;
+    top: 38%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: -3%;
+    border-radius: 50%;
+    background: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+#tobacoCarosual .owl-next {
+    position: absolute;
+    border-radius: 50%;
+    font-size: 20px !important;
+    height: 35px;
+    width: 35px;
+    top: 38%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: -4%;
+    border-radius: 50%;
+    background: #ccc;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+#tobacoCarosual .owl-prev {
+    position: absolute;
+    font-size: 20px !important;
+    height: 35px;
+    width: 35px;
+    top: 38%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: -3%;
+    border-radius: 50%;
+    background: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+#tobacoCarosual .owl-item img {
+    width: 140px;
+    height: 140px;
+    margin: auto;
+}
+
+#snacksCarosual .owl-next {
+    position: absolute;
+    border-radius: 50%;
+    font-size: 20px !important;
+    height: 35px;
+    width: 35px;
+    top: 38%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: -4%;
+    border-radius: 50%;
+    background: #ccc;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+#snacksCarosual .owl-prev {
+    position: absolute;
+    font-size: 20px !important;
+    height: 35px;
+    width: 35px;
+    top: 38%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: -3%;
+    border-radius: 50%;
+    background: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+#snacksCarosual .owl-item img {
+    width: 140px;
+    height: 140px;
+    margin: auto;
+}
+#hookah .owl-next {
+    position: absolute;
+    font-size: 20px !important;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    top: 38%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: -4%;
+    border-radius: 50%;
+    background: #ccc;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+#hookah .owl-prev {
+    position: absolute;
+    font-size: 20px !important;
+    height: 35px;
+    width: 35px;
+    top: 38%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: -3%;
+    border-radius: 50%;
+    background: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+#hookah .owl-item img {
+    width: 140px;
+    height: 140px;
+    margin: auto;
+}
+.Items {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0px 0px 0px 0px #ccc;
+}
+.carousalItemsButton{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+}
+.btn{
+    padding: 10px 15px;
+}
+.carousalItemsButton p{
+   
+}
