@@ -4,15 +4,92 @@
     box-sizing: border-box;
     font-family: sans-serif;
     box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
 }
-
-#dairyCarousal .owl-item img {
+.contactIcon {
+    background-color: black;
+    height: 45px;
+    color: white;
+    width: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+.searchBox input{
+    padding: 20px 40px;
+   border-radius: 10px;
+   border: 1px solid #ccc;
+   background-color: #cccccc1f;
+   font-size: 18px;
+   height: 50px;
+}
+.searchBox input::placeholder{
+    color: #838181;
+    font-size: 16px;
+}
+.magnifier{
+    top: 12px; 
+    left: 10px;
+}
+.marquee {
+    width: 300px;
+    height: 40px;
+    border: 1px solid #ccc;
+    background: #eee;
+    font-size: 16px;
+    padding: 5px;
+}
+.headerPerson{
+    display: none;
+}
+.headerPersonMob{
+    display: none;
+}
+.deliveryP{
+    font-size: 18px;
+    cursor: pointer;
+}
+#delevryModal .modal-dialog {
+    top: 12%;
+    left: -23%;
+    transform: none;
+}
+.or {
+    width: 40px; /* Increased for better fit */
+    height: 40px;
+    border: solid 1px #ccc;
+    background-color: #f9f9f9;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center !important;
+    font-size: 12px;
+}
+.searchDelivery>input{
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.modal-dialog {
+    top: 20%;
+    transform: none;
+}
+.owl-item img {
     width: 140px;
     height: 140px;
     margin: auto;
 }
 
-#dairyCarousal .owl-next {
+.owl-theme .owl-nav [class*=owl-] {
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px -1px, rgba(0, 0, 0, 0.14) 0px 6px 10px 0px, rgba(0, 0, 0, 0.12) 0px 1px 18px 0px;
+    border-radius: 50%;
+}
+
+.owl-next {
     position: absolute;
     border-radius: 50%;
     font-size: 20px !important;
@@ -32,7 +109,7 @@
     color: black;
 }
 
-#dairyCarousal .owl-prev {
+.owl-prev {
     position: absolute;
     font-size: 20px !important;
     height: 35px;
@@ -50,7 +127,7 @@
     color: black;
 }
 
-#tobacoCarosual .owl-next {
+/* #tobacoCarosual .owl-next {
     position: absolute;
     border-radius: 50%;
     font-size: 20px !important;
@@ -136,8 +213,8 @@
     width: 140px;
     height: 140px;
     margin: auto;
-}
-#hookah .owl-next {
+} 
+ #hookah .owl-next {
     position: absolute;
     font-size: 20px !important;
     border-radius: 50%;
@@ -173,27 +250,33 @@
     align-items: center;
     color: black;
 }
-#hookah .owl-item img {
+ #hookah .owl-item img {
     width: 140px;
     height: 140px;
     margin: auto;
-}
+}*/
 .Items {
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: white;
     box-shadow: 0px 0px 0px 0px #ccc;
 }
-.carousalItemsButton{
+
+.carousalItemsButton {
     display: flex;
     justify-content: space-between;
     align-items: center;
     align-content: center;
     align-self: center;
 }
-.btn{
+
+.btn {
     padding: 10px 15px;
 }
-.carousalItemsButton p{
-   
+
+.carousalItemsButton p {}
+
+.footerLink>ul>li>a {
+    font-size: 14px;
 }
+

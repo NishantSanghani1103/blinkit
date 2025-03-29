@@ -1,8 +1,112 @@
 @media only screen and (min-width:200px) and (max-width:575px) {
+    .logo {
+        display: none;
+    }
+
+    .headerButton {
+        display: none;
+    }
+
+    .login {
+        display: none;
+    }
+
+    /* .headerPerson{
+        display: block;
+    } */
+    .headerPersonMob {
+        display: block;
+    }
+
+    .deliveryP {
+        font-size: 14px;
+    }
+
+    .delevyAdd {
+        font-size: 12px;
+    }
+    #delevryModal{
+        display: none;
+    }
     #dairyCarousal .owl-item img {
         width: 140px;
         height: 140px;
         margin: auto;
     }
-    
+
+    #bannerItems {
+        display: none;
+    }
+
+    #items .col {
+        flex-basis: 50%;
+    }
+
+    .heading h3 {
+        font-size: 15px;
+
+    }
+
+    .heading p {
+        font-size: 16px !important;
+
+    }
+
+    .searchBox>input {
+        height: 30px;
+    }
+
+    .magnifier {
+        top: 8px;
+    }
+
+    .contactIcon {
+        height: 25px;
+        width: 25px;
+        font-size: 17px;
+    }
+
+    .modal-dialog {
+        top: 34%;
+        transform: none;
+    }
+}
+
+@media only screen and (min-width:576px) and (max-width:992px) {
+    .logo {
+        display: none;
+    }
+
+    .headerButton {
+        display: none;
+    }
+
+    .login {
+        display: none;
+    }
+
+    .headerPerson {
+        display: block;
+    }
+
+    .headerPersonMob {
+        display: none;
+    }
+
+    .deliveryP {
+        font-size: 14px;
+    }
+
+    .delevyAdd {
+        font-size: 12px;
+    }
+    #delevryModal .modal-dialog {
+        top: 12%;
+        left: -17%;
+        transform: none;
+    }
+    #bannerItems{
+        display: none;
+    }
+
 }
