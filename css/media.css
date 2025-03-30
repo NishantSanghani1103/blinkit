@@ -25,8 +25,13 @@
     .delevyAdd {
         font-size: 12px;
     }
-    #delevryModal{
-        display: none;
+
+    #delevryModal {
+        display: none !important;
+      
+    }
+    .modal-backdrop {
+        display: none !important;
     }
     #dairyCarousal .owl-item img {
         width: 140px;
